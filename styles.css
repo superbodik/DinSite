@@ -5,15 +5,20 @@ body {
     margin: 0;
     padding: 20px;
 }
+
 img {
-    max-width: 100%; /* Адаптивный размер изображения */
-    height: auto; /* Автоматическая высота */
+    max-width: 100%; 
+    height: auto; 
 }
+
 header {
     text-align: center;
     margin-bottom: 20px;
 }
-
+h2{
+    align-items: center;
+    left: 90px;
+}
 .info {
     margin-bottom: 20px;
 }
@@ -21,6 +26,7 @@ header {
 .authors {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; 
     margin-top: 20px;
 }
 
@@ -31,6 +37,20 @@ header {
     border-radius: 10px;
     text-align: center;
     width: 30%; 
+    margin: 10px; 
+}
+
+
+@media (max-width: 768px) {
+    .authors {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .author-column {
+        width: 80%; 
+        margin: 10px 0; 
+    }
 }
 
 footer {
