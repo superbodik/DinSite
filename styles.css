@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; 
+    color: #FFFFFF; 
+    margin: 0;
+    padding: 20px;
+}
+img {
+    max-width: 100%; /* Адаптивный размер изображения */
+    height: auto; /* Автоматическая высота */
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+.authors {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.author-column {
+    background-color: #1f1f1f; 
+    border: 2px solid gray; 
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%; 
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}

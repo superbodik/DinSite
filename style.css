@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Темный фон для сайта */
+    color: #FFFFFF; /* Белый цвет текста */
+}
+
+.chart-container {
+    border: 2px solid gray; /* Серая обводка для контейнера */
+    padding: 10px;
+    margin: 20px 0; /* Отступы сверху и снизу */
+    display: flex;
+    justify-content: center; /* Центрируем содержимое */
+}
+
+#myChart {
+    width: 100%; /* Использует 100% ширины контейнера */
+    height: auto; /* Высота будет автоматически подстраиваться */
+}
+
+#leaderboard {
+    margin-bottom: 20px; /* Отступ под таблицей лидеров */
+    background-color: #1f1f1f; /* Темный фон для таблицы */
+    border: 2px solid #FFA500; /* Оранжевая обводка для таблицы */
+    border-radius: 10px; /* Закругленные углы */
+    padding: 20px; /* Отступы внутри таблицы */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Убираем двойные границы */
+}
+
+th, td {
+    border: 1px solid gray; /* Обводка для ячеек таблицы */
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #FFA500; /* Оранжевый фон для заголовка таблицы */
+    color: #121212; /* Темный цвет текста заголовка */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #2a2a2a; /* Темно-серый фон для четных строк */
+}
+
+tbody tr:hover {
+    background-color: #444; /* Цвет фона при наведении на строку */
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #FFA500;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.burger-btn {
+    display: none;
+    background-color: #FFA500;
+    color: #121212;
+    border: none;
+    padding: 8px; /* Уменьшаем padding для кнопки */
+    font-size: 20px; /* Уменьшаем размер шрифта */
+    cursor: pointer;
+    border-radius: 10px;
+    top: 3px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    background-color: #FFA500;
+    color: #121212;
+    border: none;
+    padding: 8px 15px; /* Уменьшаем размеры для кнопок */
+    cursor: pointer;
+    font-size: 14px; /* Уменьшаем размер шрифта */
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: rgba(255, 165, 0, 0.8);
+}
+
+canvas {
+    max-width: 600px;
+    max-height: 400px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Адаптация для мобильных устройств */
+@media only screen and (max-width: 768px) {
+    .burger-btn {
+        display: block;
+        position: absolute;
+        left: 20px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        background-color: #1f1f1f;
+        border: 2px solid #FFA500;
+        padding: 10px;
+        border-radius: 10px;
+        width: auto;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    canvas {
+        width: 100%;
+        height: 250px; /* Высота диаграммы на мобильных устройствах */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nav-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    canvas {
+        width: 100%;
+        height: 200px; /* Высота диаграммы на малых экранах */
+    }
+}

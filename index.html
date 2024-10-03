@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Динамічна діаграма</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>  -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+  <!-- Полоса управления -->
+  <header>
+    <nav>
+      <button id="burger-btn" class="burger-btn">&#9776;</button>
+      <div id="nav-links" class="nav-links">
+        <button class="nav-btn">Головна</button>
+        <button class="nav-btn" onclick="location.href='about.html'">Про сайт</button>
+      </div>
+    </nav>
+  </header>
+  <div id="leaderboard">
+    <h2>Таблиця Лідерів</h2>
+    <table id="leaderTable">
+        <thead>
+            <tr>
+                <th>Ім'я</th>
+                <th>Вага (кг)</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+
+
+<div class="chart-container">
+    <canvas id="myChart" width="400" height="200"></canvas>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
