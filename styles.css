@@ -25,9 +25,11 @@ h2{
 
 .authors {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap; 
     margin-top: 20px;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center;     /* Центрирование по вертикали */
+    text-align: center;
 }
 
 .author-column {
@@ -38,6 +40,12 @@ h2{
     text-align: center;
     width: 30%; 
     margin: 10px; 
+}
+
+.author-column img {
+    width: 100%; /* Задаст ширину в 100% от контейнера */
+    width: 300px; /* Максимальная ширина, чтобы картинка не растягивалась слишком сильно */
+    height: 300px;
 }
 
 

@@ -21,8 +21,8 @@ const createChart = (chartType) => {
             datasets: [{
                 label: 'Вага (кг)',
                 data: data,
-                backgroundColor: 'rgba(255, 165, 0, 0.6)',
-                borderColor: 'rgba(255, 165, 0, 1)',
+                backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                borderColor: 'rgba(255, 255, 255, 1)',
                 borderWidth: 1
             }]
         },

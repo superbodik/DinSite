@@ -16,6 +16,9 @@ body {
     margin: 20px 0; /* Отступы сверху и снизу */
     display: flex;
     justify-content: center; /* Центрируем содержимое */
+    border-radius: 9px;
+    width: 90%;
+    height: 90%;
 }
 
 #myChart {
@@ -26,15 +29,19 @@ body {
 #leaderboard {
     margin-bottom: 20px; /* Отступ под таблицей лидеров */
     background-color: #1f1f1f; /* Темный фон для таблицы */
-    border: 2px solid #FFA500; /* Оранжевая обводка для таблицы */
+    border: 2px solid #ffffff; /* Оранжевая обводка для таблицы */
     border-radius: 10px; /* Закругленные углы */
     padding: 20px; /* Отступы внутри таблицы */
+    width: 90%;
+    height: 90%;
 }
 
 table {
     width: 100%;
     border-collapse: collapse; /* Убираем двойные границы */
 }
+
+
 
 th, td {
     border: 1px solid gray; /* Обводка для ячеек таблицы */
@@ -43,7 +50,7 @@ th, td {
 }
 
 th {
-    background-color: #FFA500; /* Оранжевый фон для заголовка таблицы */
+    background-color: #ffffff; /* Оранжевый фон для заголовка таблицы */
     color: #121212; /* Темный цвет текста заголовка */
 }
 
@@ -61,14 +68,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #FFA500;
+    border-bottom: 2px solid #ffffff;
     width: 100%;
     box-sizing: border-box;
 }
 
 .burger-btn {
     display: none;
-    background-color: #FFA500;
+    background-color: #ffffff;
     color: #121212;
     border: none;
     padding: 8px; /* Уменьшаем padding для кнопки */
@@ -84,7 +91,7 @@ header {
 }
 
 .nav-btn {
-    background-color: #FFA500;
+    background-color: #ffffff;
     color: #121212;
     border: none;
     padding: 8px 15px; /* Уменьшаем размеры для кнопок */
@@ -95,7 +102,7 @@ header {
 }
 
 .nav-btn:hover {
-    background-color: rgba(255, 165, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 canvas {
@@ -121,7 +128,7 @@ canvas {
         top: 50px;
         left: 20px;
         background-color: #1f1f1f;
-        border: 2px solid #FFA500;
+        border: 2px solid #ffffff;
         padding: 10px;
         border-radius: 10px;
         width: auto;
